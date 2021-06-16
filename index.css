@@ -1,0 +1,193 @@
+body 
+{
+    background-color:black;
+    /* Center everything ever*/
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center; 
+  display: flex;
+}
+.container
+ {
+    background-image: url("https://images.unsplash.com/photo-1560802296-9349892238ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:2.5% auto;
+    padding-top:2% ;
+    padding-bottom: 2%;
+    width:90%;
+    height:90%;     
+}
+.card
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  #707B7C;   /*main dark theme colour*/    
+} 
+.inpp
+{
+    height: 40px;
+    width:100%;
+    border:3.5px solid #ebedeb;
+    border-radius: 5px ; 
+    background-color: #dce3df; /*input box colour*/
+}
+hr
+{
+    border-color:#dce3df;
+}
+h1,h3,h5
+{
+    color:#D7DBDD;
+    font-family: 'Comic Neue', cursive;    
+} 
+.btns
+{
+  background:none;   
+  color:#D7DBDD;
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-family: 'Comic Neue', cursive;
+  outline:none;
+}
+h3
+{
+  font-size:1.5rem;
+}
+.a1
+{
+  color: #3d403d;
+  border-color:#3d403d;
+  background-color: #d7dbd7;
+  opacity: 1;  
+} 
+.a2
+{
+  font-family: 'Comic Neue', cursive;
+  color: #D7DBDD;
+    border-color:#3d403d;
+    background:none;
+    border:none;
+    opacity: 1;
+}
+.btn:hover {opacity: 0.6}
+/*scientific*/
+.mymodal 
+{
+ position: relative;
+ left:0;
+ right:0;
+ top:0;
+ bottom:0;
+ margin:auto ;
+ display:table;   
+}
+.mymodal > .modal-contemt
+{
+  display: table-cell;
+}
+.modal-dialog {
+  transform: translate(0, -50%);
+  margin: 0 auto;
+}
+.modal-content
+{
+    width:92%;
+    background-color:  #707B7C;  /*main dark theme colour*/
+    /* Center everything ever*/
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center; 
+  display: flex;
+}
+.verticallines
+{
+  border-left: 1px solid #dce3df; 
+  border-right: 1px solid #dce3df; 
+}
+.horizontallines
+{
+  border-top: 1px solid #dce3df; 
+  border-bottom: 1px solid #dce3df; 
+}
+/*dropdowns*/
+.dropbtn {   
+  background-color:  #707B7C; 
+    font-weight: 400;
+    font-size: 30px;
+     margin-left: 20px;   
+    cursor: pointer;
+    font-family: 'Comic Neue', cursive;
+  } 
+  .dropbtn:hover, .dropbtn:focus {
+    font-weight: 800;
+  }  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }  
+  .dropdown-content  {
+    display: none;
+    position: absolute;
+    background-color: #707B7C; /*main dark theme colour*/
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }  
+  .dropdown-content a { 
+    padding: 12px 16px;
+    font-weight: 300;
+    font-family: 'Comic Neue', cursive;
+    text-decoration: none;
+    display: block;
+    color: #3d403d;  
+  background-color: #d7dbd7;
+  opacity: 1;
+  }  
+  .dropdown a:hover {background-color: #dce3df;}
+  .show 
+  {
+    display: block;
+border:none;
+}
+.progress-bar , .progress
+{
+  height: 4px;
+}  
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+.dot
+{
+  font-weight: 700;
+}
+.inputclass
+{
+  font-size: 1.2rem; 
+  border:none; 
+  color:#D7DBDD; 
+  font-family: 'Comic Neue', cursive;
+}
+.textstyle
+{
+  border:none; 
+  color:#D7DBDD; 
+  font-family: 'Comic Neue', cursive;
+}
+
+
+.unit
+{
+font-family: 'Comic Neue', cursive;
+color: #3d403d;
+}
+
+
+
+

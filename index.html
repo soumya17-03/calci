@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--The above 3 meta tags *must* come first in the head; any other content must come *after*-->
+       <title>CALCULATOR</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/126a7c8db3.js"></script>
+        <link rel="stylesheet" href="index.css">  
+        <script></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card align-items-center pb-4" style="width: 20rem;">
+                <div class="card-body text-center ">
+                    <h1 class="mt-1 mb-3">CALCULATOR</h1>
+                    <div><input type="text" size="50" class="inp1 mb-1 inpp"  onkeydown="return false" ></div>                   
+                    <hr>                             
+            <div class="row mb-2 mx-2" >            
+              <div class="col-3"><button type="button" class="btn  font-weight-bold a1" id="ac1">AC</button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="cross1"><i class="fas fa-backspace"></i></button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="percent1"><i class="fas fa-percentage"></i></button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="divide1"><i class="fas fa-divide"></i></button></div>
+            </div>
+            <div class="row mb-2 mx-2">                        
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="71">7</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="81">8</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="91">9</button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="multi1"><i class="fas fa-star-of-life"></i></div>
+            </div>
+            <div class="row mb-2 mx-2">                            
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="41">4</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="51">5</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="61">6</button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="sub1"><i class="fas fa-minus"></i></button></div>
+            </div>
+            <div class="row mb-2 mx-2">                                
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold"  id="11">1</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="21">2</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="31">3</button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="add1" ><i class="fas fa-plus"></i></button></div>                    
+            </div> 
+            <div class="row mb-0 mx-2 ">                                        
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="01" >0</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="001" >00</button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="decimal1"><i class="fas fa-circle"></i></button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="equal1"><i class="fas fa-equals"></i></button></div>                                   
+            </div>      
+        </div>
+    
+<!--normal calculator ends-->
+<!--creating 3 buttons(modals) for different purposes-->
+<!--first modal for SCIENTIFIC CALCULATOR-->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btns py-0 my-0"  data-toggle="modal" data-target="#staticBackdrop1">SCIENTIFIC CALCULATOR</button>  
+  <!-- Modal -->
+  <div class="modal fade "  id="staticBackdrop1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop1Label" aria-hidden="false">
+    <div class="modal-dialog mymodal" role="document">
+      <div class="modal-content align-items-center" style="width: 26rem;">
+        <div class="modal-header">
+          <button type="button" class="close " data-dismiss="modal" aria-label="Close" ><i class="fas fa-arrow-left"></i></button>
+          <h3 class="modal-title"  id="staticBackdrop1Label">&nbspSCIENTIFIC  CALCULATOR</h3>          
+        </div>
+        <div class="modal-body text-center">
+          <div><input type="text" size="50" class="inp mb-1 inpp"  onkeydown="return false" ></div> 
+                    <hr>
+                    <div class="row mb-2">
+                        <div class="col"><button type="button" class="btn font-weight-bold  a1" >2nd</button></div>
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="deg">deg</i></button></div>                                           
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="sin">sin</button></div>
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="cos">cos</button></div>
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="tan">tan</button></div>
+                  </div>        
+                  <div class="row mb-2" >
+                    <div class="col"><button type="button" class="btn  a1" id="power"><i class="fas fa-superscript"></i></button></div>
+                    <div class="col"><button type="button" class="btn font-weight-bold a1" id="lg" >lg</i></button></div>
+                    <div class="col"><button type="button" class="btn font-weight-bold a1" id="ln">ln</button></div>
+                    <div class="col"><button type="button" class="btn font-weight-bold a1" id="open">(</button></div>
+                    <div class="col"><button type="button" class="btn font-weight-bold a1" id="close">)</button></div>                   
+                </div>        
+                  <div class="row mb-2">     
+                      <div class="col"><button type="button" class="btn  a1" id="sqrt"><i class="fas fa-square-root-alt"></i></button></div>
+                      <div class="col"><button type="button" class="btn font-weight-bold a1" id="ac">AC</button></div>
+                      <div class="col"><button type="button" class="btn a1 " id="cross"><i class="fas fa-backspace"></i></button></div>                        
+                      <div class="col"><button type="button" class="btn a1 " id="percent"><i class="fas fa-percentage"></i></button></div>
+                      <div class="col"><button type="button" class="btn a1 " id="divide"><i class="fas fa-divide"></i></button></div>        
+                  </div>
+                  <div class="row mb-2">
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="fact">X!</button></div>
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="7">7</button></div>
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="8">8</button></div>
+                        <div class="col"><button type="button" class="btn font-weight-bold a1" id="9">9</button></div>
+                        <div class="col"><button type="button" class="btn a1 " id="multi"><i class="fas fa-star-of-life"></i></button></div>
+                  </div>
+                  <div class="row mb-2">
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="revpower">1/X</button></div>
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="4">4</button></div>
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="5">5</button></div>
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="6">6</button></div>
+                          <div class="col"><button type="button" class="btn a1 " id="sub"><i class="fas fa-minus"></i></button></div>                
+                  </div>
+                  <div class="row mb-2">
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="pi">&pi;</button></div>
+                          <div class="col"><button type="button" class="btn font-weight-bold a1"  id="1">1</button></div>
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="2">2</button></div>
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="3">3</button></div>
+                          <div class="col"><button type="button" class="btn a1 " id="add"><i class="fas fa-plus"></i></button></div>                    
+                  </div> 
+                  <div class="row mb-0">
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="e" >e</button></div>
+                          <div class="col"><button type="button" class="btn font-weight-bold a1" id="0" >0</button></div>
+                          <div class="col"><button type="button" class="btn  font-weight-bold a1" id="00" >00</button></div>                                       
+                          <div class="col"><button type="button" class="btn a1 " id="decimal"><i class="fas fa-circle"></i></button></div>
+                          <div class="col"><button type="button" class="btn a1 " id="equal"><i class="fas fa-equals"></i></button></div>
+                  </div>
+            </div>        
+      </div>
+    </div>
+  </div>
+
+<!--second modal for LIFE-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btns py-0 my-0" data-toggle="modal" data-target="#staticBackdrop2">LIFE</button>  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop2Label" aria-hidden="true">
+    <div class="modal-dialog mymodal " role="document"  style="width: 23rem;">
+      <div class="modal-content">
+          <div class="modal-header">
+            <div class="row">
+              <div class="col-2"><button type="button" class="close text-left" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button></div>
+            <div class="col-6"><h3 class="modal-title text-center" id="staticBackdrop2Label">&nbspLIFE</h3> </div>
+            <div class="col-4"></div>
+            </div>                            
+      </div>
+        <div class="modal-body mx-0 px-0">
+                <div class="row  mb-2 ">
+                  <div class="col-4 text-center horizontallines"><button type="button" class="btn  a2" id="bmi" data-toggle="modal" data-target="#staticBackdrop3"><i class="fas fa-weight text-center"></i><div class="row text-center">&nbspBMI</div></button></div>                      
+                        <!-- Modal for bmi-->
+      <div class="modal fade" id="staticBackdrop3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop3Label" aria-hidden="true">
+        <div class="modal-dialog mymodal" role="document">
+          <div class="modal-content " style="width: 18rem;">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+                  <h5 class="modal-title" id="staticBackdrop3Label">&nbsp&nbspBMI</h5>
+                </div>           
+            <div class="modal-body">
+                <div class="row mr-2">
+                  <div class="col ml-0 mr-0 pl-0 ">
+                      <div class="dropdown">
+                          <button onclick="myFunction1()" class="dropbtn inputclass "  >Weight<span><i class="fas fa-caret-down"></i></span></button>
+                          <div id="myDropdown1" class="dropdown-content">
+                            <a id="kg">Kilograms</a>
+                            <a id="pound">Pounds</a>
+                          </div>
+                      </div>
+                  </div>                    
+                  <div class="col" >
+                      <div class="row "><input type="text" id="w" placeholder="0" class="inpp" onkeydown="return false"></div> 
+                       <div class="row"><span id="spwt" class="unit">kilograms</span></div>      
+                  </div>    
+                </div>
+              <div class="row mr-2">
+                <div class="col ml-0 mr-0 pl-0">
+                    <div class="dropdown">
+                        <button onclick="myFunction2()" class="dropbtn inputclass" >Height<span><i class="fas fa-caret-down"></i></span></button>
+                        <div id="myDropdown2" class="dropdown-content">
+                            <a id="cm">Centimeters</a>
+                            <a id="m">Meters</a>
+                            <a id="ft">Feet</a>
+                            <a id="inch">Inches</a>
+                        </div>
+                    </div>                                 
+                </div>
+                <div class="col" >
+                   <div class="row " ><input type="text"  placeholder="0" id="h" class="inpp" onkeydown="return false"></div>   
+                   <div class="row" ><span id="spht" class="unit">meters</span></div>
+                </div>             
+              </div>              
+              <hr>
+              <div class="card collapse" style="width: 18rem;" id="bmicard">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col " align="right" ><h3 id="bmiresult">20.8</h3></div>
+                    <div class="col" align="left"><h3>BMI</h3></div>
+                  </div>
+                  <div align="center" class=" pb-2" id="bmirange" style="font-family: 'Comic Neue', cursive; font-size:1rem;">Normal</div>
+                    <div class="progress ">
+                        <div class="progress-bar bg-warning" id="resprogress" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div align="center" class=" pb-2 pt-4" style="font-family: 'Comic Neue', cursive; font-size:1rem; color: #dce3df;">Information</div>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 33% "  aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 33%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 34%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="row ">
+                    <div class="col" align="left" style="color: #dce3df;">16.0</div>
+                    <div class="col">
+                      <div class="row">
+                          <div class="col pl-0 ml-0" align="left" style="color: #dce3df;">18.5</div>
+                          <div class="col pr-0 mr-0" align="right" style="color: #dce3df;">25.0</div>
+                      </div>   
+                    </div>
+                    <div class="col" align="right" style="color: #dce3df;">40.0</div>                    
+                  </div>
+                  <div class="btn a1 mt-3 mb-0" id="returnb">RETURN</div>                   
+                </div>
+              </div>              
+            <div id="numpalette" class="">
+              <div class="row mb-2 mx-2">                           
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="7b">7</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="8b">8</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="9b">9</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="acb">AC</button></div>
+              </div>
+            <div class="row mb-2 mx-2">                            
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="4b">4</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="5b">5</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="6b">6</button></div>
+                <div class="col-3"><button type="button" class="btn a1 " id="crossb"><i class="fas fa-backspace"></i></button></div>
+            </div>
+            <div class="row mb-2 mx-2">                                
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold"  id="1b">1</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="2b">2</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="3b">3</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="gob" >GO</button></div>    
+            </div> 
+            <div class="row mb-0 mx-2">  
+                <div class="col-3"></div>                                      
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="0b" >0</button></div>                   
+                <div class="col-3"><button type="button" class="btn a1 " id="decimalb"><i class="fas fa-circle"></i></button></div>  
+                <div class="col-3"></div>   
+            </div> 
+            </div>
+            </div>            
+          </div>
+        </div>
+      </div>     
+<!--Age-->
+<div class="col-4 verticallines horizontallines"><button type="button " class="btn  a2" id="age" data-toggle="modal" data-target="#staticBackdrop4"><i class="fas fa-birthday-cake"></i><div class="row ">&nbspAGE</div></button></div>      
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop4" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop4Label" aria-hidden="true">
+  <div class="modal-dialog " role="document" style="width: 24rem;">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+        <h5 class="modal-title" id="staticBackdrop4Label">&nbsp&nbspAGE</h5>              
+      </div>
+      <div class="modal-body ml-0 pl-0">
+          <div class="row mb-3 mr-0 ml-0 pl-0">
+            <div class="col-5 text-center"><h3 class="inputclass">Date of birth</h3></div>
+            <div class="col-7"> <input type="date" id="dob" name="dob" class="inpp"></div>
+          </div>
+          <div class="row mb-3 mr-0 ml-0 pl-0">
+             <div class="col-5 text-center"><h3>Today</h3></div>
+             <div class="col-7"> <input type="date" id="today" name="today" class="inpp"></div>
+           </div> 
+           <button class="getage a2  mb-1">GO</button>
+           <div class="card" style="width: 20rem;">
+               <div class="card-body ">         
+                 <div class="row ">
+                   <div class="col-6 mb-2" style="border-right: 1px solid #dce3df; border-bottom: 1px solid #dce3df;">
+                     <div class="row  ml-2" align="center"><h2 class="inputclass" style="font-size: 2rem;">Age</h2></div>
+                        <div class="row textstyle ml-1"><span class="y1 font-weight-bold" style="color: #3d403d; font-size:2rem;">0</span><span class="ml-2" style="font-size: 1rem;"> years</span></div>                      
+                        <div class="row textstyle ml-0 " style="font-size: 1rem;"><span class="m1">0</span> months &#10072; &nbsp<span class="d1">0</span> days</div>
+                      </div>
+                    <div class="col-6 mb-2" style=" border-bottom: 1px solid #dce3df;">
+                  <div class="row"><div class="col-2"></div><div class="col-8 textstyle  " align="center"><h5 style=" font-size:1rem;" class="font-weight-bold textstyle">Next Birthday</h5></div><div class="col-2"></div> </div>      
+                        <div class="row"><div class="col-4"></div> <div class="col-4 font-weight-bold text-center textstyle"><i class="fas fa-birthday-cake" style="font-size:1.5rem;"></i></div> <div class="col-4"></div> </div>
+                        <div class="row"><div class="col-2"></div><div class="col-8 weekday textstyle text-center font-weight-bold"  style="color: #3d403d; font-size:0.8rem;">WEEKDAY</div><div class="col-2"></div></div>
+                        <div class="row textstyle text-center ml-2" style="font-size: 1rem;"><span class="m2">0</span> months &#10072; &nbsp<span class="d2">0</span> days</div>
+                      </div>
+                    </div>
+                    <div class="row"><div class="col-3"></div><div class="col-6 textstyle" >Summary</div> <div class="col-3"></div></div>                   
+                    <div class="row">
+                      <div class="col textstyle">Years</div>
+                      <div class="col textstyle">Months</div>
+                      <div class="col textstyle">Weeks</div>
+                    </div>
+                    <div class="row">
+                        <div class="col yearage textstyle">0</div>
+                        <div class="col monthage textstyle">0</div>
+                        <div class="col weekage textstyle">0</div>
+                    </div>
+                    <div class="row">
+                     <div class="col textstyle">Days</div>
+                     <div class="col textstyle">Hours</div>
+                     <div class="col textstyle">Minutes</div>
+                  </div>
+                  <div class="row">
+                      <div class="col dayage textstyle">0</div>
+                  <div class="col hourage textstyle">0</div>
+                  <div class="col minage textstyle">0</div>
+                  </div>                                       
+                </div>
+           </div>         
+         </div>            
+      </div>
+    </div>
+ </div>                         
+<!--discount-->
+<div class="col-4 horizontallines"><button type="button" class="btn a2" id="disc" data-toggle="modal" data-target="#staticBackdrop5"><i class="fas fa-tag"></i><div class="row ">DISCOUNT</div></button></div>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop5" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop5Label" aria-hidden="true">
+        <div class="modal-dialog mymodal" role="document" style="width: 24rem;">
+          <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+              <h5 class="modal-title" id="staticBackdrop5Label">&nbsp&nbspDISCOUNT</h5>              
+            </div>
+            <div class="modal-body ml-0 pl-0">
+               <div class="row mb-3 ml-0 pl-0 mr-2">
+                 <div class="col-6 text-center"><h4 class=" inputclass">Original price</h4></div>
+                 <div class="col-6 text-center" align="right" ><input type="text" id="op" placeholder="0" class="inpp" style="width:150px;" onkeydown="return false"></div>
+               </div>
+               <div class="row mb-3  ml-0 pl-0 mr-2">
+                <div class="col-6 text-center"><h4 class="inputclass">Discount(% off)</h4></div>
+                <div class="col-6 " align="right" ><input type="text" id="dp" placeholder="0" class="inpp" style="width:150px;" onkeydown="return false"></div>
+              </div>
+              <div class="row  ml-0 pl-0 mr-2">
+                <div class="col-6"><h4 class="inputclass">Final price</h4></div>
+                <div class="col-6"><div class="inpp mx-0" align="right" id="fp" style="width:150px;">0</div></div>
+              </div>
+              <div class="row pb-2  ml-0 pl-0 mt-2">
+                <div class="col collapse" align="center" id="saved" style="color:#D7DBDD; font-family: 'Comic Neue', cursive;">You save <span id="save"></span></div>
+               </div>
+                <hr style="width: 20rem;">          
+            <div id="numpalette" class="">
+              <div class="row mb-2 mx-2  ml-0 pl-0">                        
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="7d">7</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="8d">8</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="9d">9</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="acd">AC</button></div>
+              </div>
+            <div class="row mb-2 mx-2">                            
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="4d">4</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="5d">5</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="6d">6</button></div>
+                <div class="col-3"><button type="button" class="btn a1 " id="crossd"><i class="fas fa-backspace"></i></button></div>
+            </div>
+            <div class="row mb-2 mx-2">                                
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold"  id="1d">1</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="2d">2</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="3d">3</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="god" >GO</button></div>    
+            </div> 
+            <div class="row mb-0 mx-2">                                        
+                <div class="col-3"></div> 
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="0d" >0</button></div>    
+                <div class="col-3"><button type="button" class="btn a1 " id="decimald"><i class="fas fa-circle"></i></button></div> 
+                <div class="col-3"></div>    
+            </div>             
+            </div>            
+          </div>
+        </div>
+      </div>                         
+    </div>
+  </div><!--row1 end-->
+<div class="row mb-2 ">
+<!--percentage-->
+    <div class="col-4 horizontallines"><button type="button" class="btn a2" id="per" data-toggle="modal" data-target="#staticBackdrop6"><i class="fas fa-percentage"></i><div class="row" style="font-size: 0.8rem;">PERCENTAGE</div></button></div>
+       <!-- Modal -->
+   <div class="modal fade" id="staticBackdrop6" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop6Label" aria-hidden="true">
+       <div class="modal-dialog mymodal" role="document" style="width: 24rem;">
+         <div class="modal-content ">
+           <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+             <h5 class="modal-title" id="staticBackdrop6Label" >&nbsp&nbspPERCENTAGE</h5>              
+           </div>
+           <div class="modal-body ml-0 pl-0">
+              <div class="row ml-0 pl-0 mr-2 mb-2">
+                <div class="col-6"><h4 class="inputclass">Percentage(%)</h4></div>
+                <div class="col-6" align="right" ><input type="text" id="pv" placeholder="0" class="inpp" onkeydown="return false" style="width:150px;"></div>
+              </div>
+              <div class="row ml-0 pl-0 mr-2 mb-2">
+               <div class="col-6"><h4 class="inputclass">Total</h4></div>
+               <div class="col-6" align="right" ><input type="text" id="tot" placeholder="0" class="inpp" onkeydown="return false" style="width:150px;"></div>
+             </div>
+             <div class="row pb-2 mr-2 ml-0 pl-0 ">
+               <div class="col-6"><h4 class="inputclass">Result</h4></div>
+               <div class="col-6"><div class="inpp "  id="pres" style="width:150px;">0</div></div>
+             </div>                                
+               <hr>          
+           <div id="numpalette" class="">
+             <div class="row mb-2 mx-2">                        
+                 <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="7p">7</button></div>
+                 <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="8p">8</button></div>
+                 <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="9p">9</button></div>
+                 <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="acp">AC</button></div>
+              </div>
+              <div class="row mb-2 mx-2">                            
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="4p">4</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="5p">5</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="6p">6</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 " id="crossp"><i class="fas fa-backspace"></i></button></div>
+              </div>
+              <div class="row mb-2 mx-2">                                
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold"  id="1p">1</button></div>
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="2p">2</button></div>
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="3p">3</button></div>
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="gop" >GO</button></div>    
+              </div> 
+              <div class="row mb-1 mx-2">                                        
+                  <div class="col-3"></div> 
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="0p" >0</button></div>    
+                  <div class="col-3"><button type="button" class="btn a1 " id="decimalp"><i class="fas fa-circle"></i></button></div> 
+                  <div class="col-3"></div>    
+              </div>             
+              </div>            
+             </div>
+          </div>
+         </div>                         
+</div>                                       
+<!--Date Difference-->
+ <div class="col-4 verticallines horizontallines"><button type="button" class="btn a2" id="datediff" data-toggle="modal" data-target="#staticBackdrop7"><i class="fas fa-calendar-alt"></i><div class="row">DATE</div></button></div>     
+ <!-- Modal -->
+ <div class="modal fade" id="staticBackdrop7" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop7Label" aria-hidden="true">
+   <div class="modal-dialog mymodal" role="document" style="width: 22rem;">
+     <div class="modal-content">
+       <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+         <h5 class="modal-title" id="staticBackdrop7Label">&nbsp&nbspDATE</h5>              
+       </div>
+       <div class="modal-body ml-0 pl-0">
+           <div class="row mb-3 mr-0 ml-0 pl-0">
+             <div class="col-4"><h3 class="inputclass">From</h3></div>
+             <div class="col-8 "> <input type="date" id="from" name="from" onkeydown="return false" class="inpp"></div>
+           </div>
+           <div class="row mb-3 mr-0 ml-0 pl-0">
+              <div class="col-4"><h3 class="inputclass">To</h3></div>
+              <div class="col-8 "> <input type="date" id="to" name="to" onkeydown="return false" class="inpp"></div>
+            </div> 
+            <button class="getdiff a2  mb-1">GO</button>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Difference</h5>
+                  <hr>
+                  <div class="row">
+                    <div class="col textstyle">Years</div>
+                    <div class="col textstyle">Months</div>
+                    <div class="col textstyle">Days</div>
+                  </div>
+                  <div class="row">
+                      <div class="col yearans textstyle">0</div>
+                      <div class="col monthans textstyle">0</div>
+                      <div class="col dayans textstyle">0</div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col textstyle">From</div>
+                      <div class="col textstyle">To</div>                      
+                  </div>
+                  <div class="row">
+                      <div class="col fromans textstyle">-</div>
+                      <div class="col toans textstyle">-</div>                      
+                  </div>
+                </div>
+              </div>         
+      </div>            
+     </div>
+   </div>
+ </div> 
+
+<!--Length-->
+<div class="col-4 horizontallines"><button type="button" class="btn a2" id="length" data-toggle="modal" data-target="#staticBackdrop8"><i class="fas fa-ruler-horizontal"></i><div class="row">LENGTH</div></button></div>     
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop8" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop8Label" aria-hidden="true">
+  <div class="modal-dialog  mymodal" role="document" style="width: 22rem;">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+        <h5 class="modal-title" id="staticBackdrop8Label">&nbsp&nbspLENGTH CONVERTER</h5>              
+      </div>
+      <div class="modal-body mr-2">
+          <div class="row ml-0 mr-0 pl-0 ">                                   
+            <div class="col">                                        
+                <div class="dropdown">
+                    <div class="inputclass"><span id="spfirst">m</span><button onclick="myFunction3()" class="dropbtn inputclass" id="first"><i class="fas fa-caret-down"></i></button></div>                   
+                    <div id="myDropdown3" class="dropdown-content scrollable-menu">
+                        <a class="km1">Kilometer km</a>
+                        <a class="meter1">Meter m</a>
+                        <a class="dm1">Decimeter dm</a>
+                        <a class="cm1">Centimeter cm</a>
+                        <a class="mm1">Millimeter mm</a>
+                        <a class="um1">Micrometer &micro;m</a>
+                        <a class="nm1">Nanometer nm</a>
+                        <a class="pm1">Picometer pm</a>                                                
+                        <a class="nmi1">Nautical mile nmi</a>
+                        <a class="mile1">Mile mi</a>
+                        <a class="fur1">Femara fur</a>
+                        <a class="ftm1">Fathom ftm</a>
+                        <a class="yd1">Yard yd</a>
+                        <a class="foot1">Foot ft</a>
+                        <a class="in1">Inch in</a>
+                        <a class="ftin1">Foot ft &#10072; Inch in</a>                                              
+                        <a class="pc1">Parsec pc</a>
+                        <a class="ld1">Lunar distance ld</a>
+                        <a class="ast1">Astronomical unit <i class="fas fa-dot-circle"></i></a>                                              
+                        <a class="ly1">Light year ly</a>
+                    </div>
+                 </div>
+            </div>   
+            <div class="col collapse footinch1 mr-1">
+                <div class="row"><input type="text" id="l3" placeholder="0" class="inpp" onkeydown="return false"></div>
+                <div class="row" ><span class="unit">Foot</span></div>
+              </div>              
+            <div class="col " >
+                <div class="row "><input type="text" id="l1" placeholder="0" class="inpp" onkeydown="return false"></div> 
+                 <div class="row"><span id="spl1" class="unit">Meter</span></div>      
+             </div>    
+        </div>
+        <div class="row ml-0 mr-0 pl-0">
+          <div class="col">
+              <div class="dropdown">
+                  <div class="inputclass"><span id="spsecond">cm</span><button onclick="myFunction3()" class="dropbtn inputclass" id="second"><i class="fas fa-caret-down"></i></button></div> 
+              <!--calling previous dropdown-->                                      
+                  </div>                                   
+                  </div>
+                  <div class="col collapse footinch2 mr-1">
+                    <div class="row"><input type="text" id="l4" placeholder="0" class="inpp" onkeydown="return false"></div>
+                    <div class="row" ><span class="unit">Foot</span></div>
+                  </div>
+                  <div class="col" >
+                     <div class="row "  ><input type="text" id="l2" placeholder="0" class="inpp" onkeydown="return false"></div>   
+                     <div class="row" ><span id="spl2" class="unit">Centimeter</span></div>
+                  </div>             
+                </div>              
+                <hr>                                     
+              <div id="numpalette" class="">
+                <div class="row mb-2 mx-2">                        
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7" id="7l">7</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8" id="8l">8</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9" id="9l">9</button></div>
+                    <div class="col-3"><button type="button" class="btn a1 font-weight-bold acl" id="acl">AC</button></div>
+                </div>
+              <div class="row mb-2 mx-2">                            
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4" id="4l">4</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5" id="5l">5</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6" id="6l">6</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 crossl" id="crossl"><i class="fas fa-backspace"></i></button></div>
+              </div>
+              <div class="row mb-3 mx-2">                                
+                       <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1"  id="1l">1</button></div>
+                       <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2" id="2l">2</button></div>
+                       <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3" id="3l">3</button></div>
+                       <div class="col-3"><button type="button" class="btn a1 font-weight-bold gol" id="gol" >GO</button></div>    
+              </div> 
+              <div class="row mb-0 mx-2">  
+                  <div class="col-3"></div>                                      
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0" id="0l" >0</button></div>                   
+                  <div class="col-3"><button type="button" class="btn a1 decimall" id="decimall"><i class="fas fa-circle"></i></button></div>  
+                  <div class="col-3"></div>   
+              </div> 
+            </div>
+          </div>            
+        </div>
+       </div>
+      </div>
+</div>
+<div class="row mb-2 ">                      
+<!--Area-->
+<div class="col-4 horizontallines"><button type="button" class="btn  a2" id="area" data-toggle="modal" data-target="#staticBackdrop9"><i class="fas fa-compress-arrows-alt"></i><div class="row">AREA</div></button></div>      
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop9" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop9Label" aria-hidden="true">
+  <div class="modal-dialog mymodal" role="document" style="width: 20rem;">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+        <h5 class="modal-title" id="staticBackdrop9Label">&nbsp&nbspAREA CONVERTER</h5>              
+      </div>
+      <div class="modal-body mr-2">
+          <div class="row ">
+            <div class="col ">
+                <div class="dropdown">
+                    <div class="inputclass" onclick="myFunction4()"><span id="arspfirst" >m<span>&#178;</span></span><button  class="dropbtn inputclass" id="arfirst"><i class="fas fa-caret-down"></i></button></div>
+                    <div id="myDropdown4" class="dropdown-content scrollable-menu">
+                        <a class="km2">Square kilometer km<span>&#178;</span></a>
+                        <a class="hect2">Hectare ha</a>
+                        <a class="ar2">Are a</a>
+                        <a class="msq2">Square meter m<span>&#178;</span></a>
+                        <a class="dm2">Square decimeter dm<span>&#178;</span></a>
+                        <a class="cm2">Square centimeter cm<span>&#178;</span></a>
+                        <a class="mm2">Square millimeter mm<span>&#178;</span></a>
+                        <a class="um2">Square micron &micro;m<span>&#178;</span></a>
+                        <a class="acre2">Acre ac</a>                        
+                        <a class="mile2">Square mile mile<span>&#178;</span></a>                        
+                        <a class="yd2">Square yard yd<span>&#178;</span></a>
+                        <a class="foot2">Square foot ft<span>&#178;</span></a>
+                        <a class="in2">Square inch in<span>&#178;</span></a>
+                        <a class="rd2">Square rod rd<span>&#178;</span></a>
+                    </div>
+                </div>
+            </div>                    
+            <div class="col" >
+                <div class="row mr-2"><input type="text" id="ar1" placeholder="0" class="inpp" onkeydown="return false" ></div> 
+                 <div class="row"><span id="arsp1" class="unit">Square meter</span></div>      
+            </div>    
+          </div>
+        <div class="row">
+          <div class="col">
+              <div class="dropdown">
+                  <div class="inputclass" onclick="myFunction4()"><span id="arspsecond" >m<span>&#178;</span></span><button  class="dropbtn inputclass" id="arsecond"><i class="fas fa-caret-down"></i></button></div>           
+              <!--calling previous dropdown-->
+              </div>                                   
+          </div>
+          <div class="col" >
+             <div class="row mr-2" ><input type="text" id="ar2" placeholder="0" class="inpp" onkeydown="return false" ></div>   
+             <div class="row" ><span id="arsp2" class="unit">Square centimeter</span></div>
+          </div>             
+        </div>              
+        <hr>             
+      <div id="numpalette" class="">
+        <div class="row mb-2 mx-2">                        
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7a" >7</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8a" >8</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9a" >9</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold aca" >AC</button></div>
+        </div>
+      <div class="row mb-2 mx-2">                            
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4a" >4</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5a" >5</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6a" >6</button></div>
+          <div class="col-3"><button type="button" class="btn a1 crossa" ><i class="fas fa-backspace"></i></button></div>
+      </div>
+      <div class="row mb-2 mx-2">                                
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1a"  >1</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2a" >2</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3a" >3</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold goa"  >GO</button></div>    
+      </div> 
+      <div class="row mb-0 mx-2">  
+        <div class="col-3"></div>                                      
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0a"  >0</button></div>                   
+          <div class="col-3"><button type="button" class="btn a1 decimala" ><i class="fas fa-circle"></i></button></div>  
+          <div class="col-3"></div>   
+      </div> 
+      </div>
+      </div>            
+    </div>
+  </div>
+</div>
+  <!--Volume-->
+<div class="col-4 verticallines horizontallines"><button type="button" class="btn  a2" id="volume" data-toggle="modal" data-target="#staticBackdrop10"><i class="fas fa-cube"></i><div class="row">VOLUME</div></button></div>      
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop10" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop10Label" aria-hidden="true">
+  <div class="modal-dialog mymodal" role="document" style="width: 20rem;">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+        <h5 class="modal-title" id="staticBackdrop10Label">&nbsp&nbspVOLUME CONVERTER</h5>              
+      </div>
+      <div class="modal-body mr-2">
+          <div class="row">
+            <div class="col">
+                <div class="dropdown">
+                    <div class="inputclass" onclick="myFunction5()"><span id="volspfirst" >m<span>&#179;</span></span><button  class="dropbtn inputclass" id="volfirst"><i class="fas fa-caret-down"></i></button></div>
+                    <div id="myDropdown5" class="dropdown-content scrollable-menu">
+                        <a class="m3">Cubic meter m<span>&#179;</span></a>
+                        <a class="dm3">Cubic decimeter dm<span>&#179;</span></a>
+                        <a class="cm3">Cubic centimeter cm<span>&#179;</span></a>
+                        <a class="mm3">Cubic millimeter mm<span>&#179;</span></a>
+                        <a class="hect3">Hectoliter hl</a>
+                        <a class="l3">Litre l</a>
+                        <a class="dl3">Deciliter dl</a>   
+                        <a class="cl3">Centiliter cl</a> 
+                        <a class="ml3">Milliliter ml</a>
+                        <a class="foot3">Cubic foot ft<span>&#179;</span></a> 
+                        <a class="in3">Cubic inch in<span>&#179;</span></a>
+                        <a class="yd3">Cubic yard yd<span>&#179;</span></a>
+                        <a class="af3">Acre-foot af<span>&#179;</span></a>                        
+                    </div>
+                </div>
+            </div>                    
+            <div class="col" >
+                <div class="row mr-2"><input type="text" id="vol1" placeholder="0" class="inpp" onkeydown="return false"></div> 
+                 <div class="row"><span id="volsp1" class="unit">Cubic meter</span></div>      
+            </div>    
+          </div>
+        <div class="row">
+          <div class="col">
+              <div class="dropdown">
+                  <div class="inputclass" onclick="myFunction5()"><span id="volspsecond" >m<span>&#179;</span></span><button  class="dropbtn inputclass" id="volsecond"><i class="fas fa-caret-down"></i></button></div>
+              </div>                                   
+          </div>
+          <div class="col" >
+             <div class="row mr-2" ><input type="text" id="vol2" placeholder="0" class="inpp" onkeydown="return false"></div>   
+             <div class="row" ><span id="volsp2" class="unit">Cubic centimeter</span></div>
+          </div>             
+        </div>              
+        <hr>             
+      <div id="numpalette" class="">
+        <div class="row mb-2 mx-2">                        
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7v" >7</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8v" >8</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9v" >9</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold acv" >AC</button></div>
+        </div>
+      <div class="row mb-2 mx-2">                            
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4v" >4</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5v" >5</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6v" >6</button></div>
+          <div class="col-3"><button type="button" class="btn a1 crossv" ><i class="fas fa-backspace"></i></button></div>
+      </div>
+      <div class="row mb-2 mx-2">                                
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1v"  >1</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2v" >2</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3v" >3</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold gov"  >GO</button></div>    
+      </div> 
+      <div class="row mb-0 mx-2">  
+          <div class="col-3"></div>                                      
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0v"  >0</button></div>                   
+          <div class="col-3"><button type="button" class="btn a1 decimalv" ><i class="fas fa-circle"></i></button></div>  
+          <div class="col-3"></div>   
+      </div> 
+      </div>
+      </div>            
+    </div>
+  </div>
+  </div>             
+  <!--Temperature-->
+<div class="col-4 horizontallines"><button type="button" class="btn  a2" id="temp" data-toggle="modal" data-target="#staticBackdrop11"><i class="fas fa-thermometer-three-quarters"></i><div class="row" style="font-size: 0.8rem;">TEMPERATURE</div></button></div>      
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop11" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop11Label" aria-hidden="true">
+  <div class="modal-dialog mymodal" role="document" style="width: 20rem;">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+        <h5 class="modal-title" id="staticBackdrop11Label">&nbsp&nbspTEMPERATURE CONVERTER</h5>              
+      </div>
+      <div class="modal-body mr-2">
+          <div class="row">
+            <div class="col">
+                <div class="dropdown">
+                    <div class="inputclass" onclick="myFunction6()"><span id="tempspfirst" >C</span><button  class="dropbtn inputclass" id="tempfirst"><i class="fas fa-caret-down"></i></button></div>
+                    <div id="myDropdown6" class="dropdown-content scrollable-menu">
+                        <a class="ct">Celsius &#176;C</a>
+                        <a class="ft">Fahrenheit &#176;F</a>
+                        <a class="kt">Kelvin K</a>
+                        <a class="rt">Rankine &#176;R</a>
+                        <a class="ret">R&#233;aumur &#176;Re</a>                        
+                    </div>
+                </div>
+            </div>                    
+            <div class="col" >
+                <div class="row mr-2"><input type="text" id="temp1" placeholder="0" class="inpp" onkeydown="return false"></div> 
+                 <div class="row"><span id="tempsp1" class="unit">Celsius</span></div>      
+            </div>    
+          </div>
+        <div class="row">
+          <div class="col">
+              <div class="dropdown">
+                  <div class="inputclass" onclick="myFunction6()"><span id="tempspsecond" >F</span><button  class="dropbtn inputclass" id="tempsecond"><i class="fas fa-caret-down"></i></button></div>
+              </div>                                   
+          </div>
+          <div class="col" >
+             <div class="row mr-2" ><input type="text" id="temp2" placeholder="0" class="inpp" onkeydown="return false"></div>   
+             <div class="row" ><span id="tempsp2" class="unit">Fahrenheit</span></div>
+          </div>             
+        </div>              
+        <hr>             
+      <div id="numpalette" class="">
+        <div class="row mb-2 mx-2">                        
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7t" >7</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8t" >8</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9t" >9</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold act" >AC</button></div>
+        </div>
+      <div class="row mb-2 mx-2">                            
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4t" >4</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5t" >5</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6t" >6</button></div>
+          <div class="col-3"><button type="button" class="btn a1 crosst" ><i class="fas fa-backspace"></i></button></div>
+      </div>
+      <div class="row mb-2 mx-2">                                
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1t"  >1</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2t" >2</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3t" >3</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold got"  >GO</button></div>    
+      </div> 
+      <div class="row mb-0 mx-2">                                       
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0t"  >0</button></div>                   
+          <div class="col-3"><button type="button" class="btn a1 decimalt" ><i class="fas fa-circle"></i></button></div>  
+          <div class="col-3"><button type="button" class="btn a1 addt" ><i class="fas fa-plus"></i></button></div> 
+          <div class="col-3"><button type="button" class="btn a1 subt"><i class="fas fa-minus"></i></button></div>   
+      </div> 
+      </div>
+      </div>            
+    </div>
+  </div>
+</div>
+</div>                      
+<div class="row mb-2 ">                        
+ <!--Speed-->
+<div class="col-4 horizontallines"><button type="button" class="btn  a2" id="speed" data-toggle="modal" data-target="#staticBackdrop12"><i class="fas fa-tachometer-alt"></i><div class="row">SPEED</div></button></div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop12" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop12Label" aria-hidden="true">
+  <div class="modal-dialog mymodal" role="document" style="width: 20rem;">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+        <h5 class="modal-title" id="staticBackdrop12Label">&nbsp&nbspSPEED CONVERTER</h5>              
+      </div>
+      <div class="modal-body mr-2">
+          <div class="row">
+            <div class="col">
+                <div class="dropdown">
+                    <div class="inputclass" onclick="myFunction7()"><span id="speedspfirst" >m/s</span><button  class="dropbtn inputclass" id="speedfirst"><i class="fas fa-caret-down"></i></button></div>
+                    <div id="myDropdown7" class="dropdown-content scrollable-menu">
+                        <a class="ls">Lightspeed c</a>
+                        <a class="ms">Mach Ma</a>
+                        <a class="mps">Meter per second m/s</a>
+                        <a class="kmh">Kilometer per hour km/h</a>
+                        <a class="kms">Kilometer per second km/s</a>
+                        <a class="kns">Knot kn</a>
+                        <a class="mph">Mile per hour mph</a>
+                        <a class="fps">Foot per second fps</a>
+                        <a class="ips">Inch per second ips</a>                        
+                    </div>
+                </div>
+            </div>                    
+            <div class="col" >
+                <div class="row mr-2"><input type="text" id="speed1" placeholder="0" class="inpp" onkeydown="return false"></div> 
+                 <div class="row"><span id="speedsp1" class="unit">Meter per second</span></div>      
+            </div>    
+          </div>
+        <div class="row">
+          <div class="col">
+              <div class="dropdown">
+                  <div class="inputclass" onclick="myFunction7()"><span id="speedspsecond" >km/s</span><button  class="dropbtn inputclass" id="speedsecond"><i class="fas fa-caret-down"></i></button></div>
+              </div>                                   
+          </div>
+          <div class="col" >
+             <div class="row mr-2" ><input type="text" id="speed2" placeholder="0" class="inpp" onkeydown="return false"></div>   
+             <div class="row" ><span id="speedsp2" class="unit">Kilometer per second</span></div>
+          </div>             
+        </div>              
+        <hr>             
+      <div id="numpalette" class="">
+        <div class="row mb-2 mx-2">                        
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7s" >7</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8s" >8</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9s" >9</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold acs" >AC</button></div>
+        </div>
+      <div class="row mb-2 mx-2">                            
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4s" >4</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5s" >5</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6s" >6</button></div>
+          <div class="col-3"><button type="button" class="btn a1 crosss" ><i class="fas fa-backspace"></i></button></div>
+      </div>
+      <div class="row mb-2 mx-2">                                
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1s"  >1</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2s" >2</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3s" >3</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold gos"  >GO</button></div>    
+      </div> 
+      <div class="row mb-0 mx-2">                                
+          <div class="col-3"></div>       
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0s"  >0</button></div>                   
+          <div class="col-3"><button type="button" class="btn a1 decimals" ><i class="fas fa-circle"></i></button></div>  
+          <div class="col-3"></div>   
+      </div> 
+      </div>
+      </div>            
+    </div>
+  </div>
+</div>
+<!--Time-->
+<div class="col-4 verticallines horizontallines"><button type="button" class="btn  a2" id="time" data-toggle="modal" data-target="#staticBackdrop13"><i class="fas fa-clock"></i><div class="row">TIME</div></button></div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop13" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop13Label" aria-hidden="true">
+  <div class="modal-dialog mymodal" role="document" style="width: 20rem;">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+        <h5 class="modal-title" id="staticBackdrop111Label">&nbsp&nbspTIME CONVERTER</h5>              
+      </div>
+      <div class="modal-body mr-2">
+          <div class="row">
+            <div class="col">
+                <div class="dropdown">
+                    <div class="inputclass" onclick="myFunction8()"><span id="timespfirst" >min</span><button  class="dropbtn inputclass" id="timefirst"><i class="fas fa-caret-down"></i></button></div>
+                    <div id="myDropdown8" class="dropdown-content scrollable-menu">
+                        <a class="yc">Year y</a>
+                        <a class="wkc">Week wk</a>
+                        <a class="dc">Day d</a>
+                        <a class="hc">Hour h</a>
+                        <a class="minc">Minute min</a>
+                        <a class="sc">Second s</a>
+                        <a class="msc">Millisecond ms</a>
+                        <a class="usc">Microsecond &micro;ms</a>
+                        <a class="psc">Picosecond ps</a>                        
+                    </div>
+                </div>
+            </div>                    
+            <div class="col" >
+                <div class="row mr-2"><input type="text" id="time1" placeholder="0" class="inpp" onkeydown="return false"></div> 
+                 <div class="row"><span id="timesp1" class="unit">Minute</span></div>      
+            </div>    
+          </div>
+        <div class="row">
+          <div class="col">
+              <div class="dropdown">
+                  <div class="inputclass" onclick="myFunction8()"><span id="timespsecond" >s</span><button  class="dropbtn inputclass" id="timesecond"><i class="fas fa-caret-down"></i></button></div>
+             </div>                                   
+          </div>
+          <div class="col" >
+             <div class="row mr-2" ><input type="text" id="time2" placeholder="0" class="inpp" onkeydown="return false"></div>   
+             <div class="row" ><span id="timesp2" class="unit">Second</span></div>
+          </div>             
+        </div>              
+        <hr>             
+      <div id="numpalette" class="">
+        <div class="row mb-2 mx-2">                        
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7c" >7</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8c" >8</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9c" >9</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold acc ">AC</button></div>
+        </div>
+      <div class="row mb-2 mx-2">                            
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4c" >4</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5c" >5</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6c" >6</button></div>
+          <div class="col-3"><button type="button" class="btn a1 crossc" ><i class="fas fa-backspace"></i></button></div>
+      </div>
+      <div class="row mb-2 mx-2">                                
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1c"  >1</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2c" >2</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3c" >3</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold goc"  >GO</button></div>    
+      </div> 
+      <div class="row mb-0 mx-2">                               
+          <div class="col-3"></div>        
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0c"  >0</button></div>                   
+          <div class="col-3"><button type="button" class="btn a1 decimalc" ><i class="fas fa-circle"></i></button></div>  
+          <div class="col-3"></div>    
+      </div> 
+      </div>
+      </div>            
+    </div>
+  </div>
+</div>                       
+ <!--Mass-->
+ <div class="col-4 horizontallines"><button type="button" class="btn  a2" id="mass" data-toggle="modal" data-target="#staticBackdrop14"><i class="fas fa-weight-hanging"></i><div class="row">MASS</div></button></div>
+<!-- Modal -->
+ <div class="modal fade" id="staticBackdrop14" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop14Label" aria-hidden="true">
+   <div class="modal-dialog mymodal" role="document" style="width: 20rem;">
+     <div class="modal-content">
+       <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+         <h5 class="modal-title" id="staticBackdrop14Label">&nbsp&nbspMASS CONVERTER</h5>              
+       </div>
+       <div class="modal-body mr-2">
+           <div class="row">
+             <div class="col">
+                 <div class="dropdown">
+                    <div class="inputclass" onclick="myFunction9()"><span id="massspfirst" >kg</span><button  class="dropbtn inputclass" id="massfirst"><i class="fas fa-caret-down"></i></button></div>
+                     <div id="myDropdown9" class="dropdown-content scrollable-menu">
+                         <a class="tm">Tonne t</a>   
+                         <a class="kgm">Kilogram kg</a>
+                         <a class="gm">Gram g</a>
+                         <a class="mgm">Milligram mg</a>
+                         <a class="umgm">Microgram &micro;g</a>
+                         <a class="qm">Quintal q</a>
+                         <a class="lbm">Pound lb</a>
+                         <a class="ozm">Ounce oz</a>
+                         <a class="ctm">Carat ct</a>
+                         <a class="grm">Grain gr</a>
+                         <a class="ltm">Long ton l.t</a>                                                
+                         <a class="shtm">Short ton sh.t</a>                         
+                         <a class="ukm">UK hundredweight cwt</a>
+                         <a class="usm">US hundredweight cwt</a>
+                         <a class="stm">Stone st</a>
+                         <a class="drm">Dram dr</a>                         
+                     </div>
+                 </div>
+             </div>                    
+             <div class="col" >
+                 <div class="row mr-2"><input type="text" id="mass1" placeholder="0" class="inpp" onkeydown="return false"></div> 
+                  <div class="row"><span id="masssp1" class="unit">Kilogram</span></div>      
+             </div>    
+           </div>
+         <div class="row">
+           <div class="col">
+               <div class="dropdown">
+                  <div class="inputclass" onclick="myFunction9()"><span id="massspsecond" >g</span><button  class="dropbtn inputclass" id="masssecond"><i class="fas fa-caret-down"></i></button></div>
+              </div>                                   
+           </div>
+           <div class="col" >
+              <div class="row mr-2" ><input type="text" id="mass2" placeholder="0" class="inpp" onkeydown="return false"></div>   
+              <div class="row" ><span id="masssp2" class="unit">Gram</span></div>
+           </div>             
+         </div>              
+         <hr>              
+       <div id="numpalette" class="">
+         <div class="row mb-2 mx-2">                        
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7m">7</button></div>
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8m">8</button></div>
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9m">9</button></div>
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold acm">AC</button></div>
+         </div>
+       <div class="row mb-2 mx-2">                            
+           <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4m">4</button></div>
+           <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5m">5</button></div>
+           <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6m">6</button></div>
+           <div class="col-3"><button type="button" class="btn a1 crossm"><i class="fas fa-backspace"></i></button></div>
+       </div>
+       <div class="row mb-2 mx-2">                                
+               <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1m">1</button></div>
+               <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2m">2</button></div>
+               <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3m">3</button></div>
+               <div class="col-3"><button type="button" class="btn a1 font-weight-bold gom" >GO</button></div>    
+       </div> 
+       <div class="row mb-0 mx-2">  
+            <div class="col-3"></div>                                      
+           <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0m" >0</button></div>                   
+           <div class="col-3"><button type="button" class="btn a1 decimalm" ><i class="fas fa-circle"></i></button></div>  
+           <div class="col-3"></div>   
+       </div> 
+       </div>
+       </div>            
+     </div>
+   </div>
+ </div>
+</div>
+<div class="row">                                               
+ <!--numeral system-->
+ <div class="col-1"></div>
+ <div class="col-10 horizontallines verticallines"><button type="button" class="btn a2" id="num" data-toggle="modal" data-target="#staticBackdrop15">NUMERAL SYSTEM</button></div>
+  <!-- Modal -->
+ <div class="modal fade" id="staticBackdrop15" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop15Label" aria-hidden="true">
+   <div class="modal-dialog mymodal" role="document" style="width: 20rem;">
+     <div class="modal-content">
+       <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+         <h5 class="modal-title" id="staticBackdrop15Label">&nbsp&nbspNUMERAL SYSTEM</h5>              
+       </div>
+       <div class="modal-body mr-2">
+           <div class="row mb-2">
+             <div class="col">
+                 <div class="dropdown">
+                    <div class="inputclass" onclick="myFunction10()"><span id="numspfirst" >DEC</span><button  class="dropbtn inputclass" id="numfirst"><i class="fas fa-caret-down"></i></button></div>
+                     <div id="myDropdown10" class="dropdown-content scrollable-menu">
+                         <a class="bin">Binary BIN</a>   
+                         <a class="oct">Octal OCT</a>
+                         <a class="dec">Decimal DEC</a>
+                         <a class="hex">Hexadecimal HEX</a>                                               
+                     </div>
+                 </div>
+             </div>                    
+             <div class="col" >
+                 <div class="row mr-2"><input type="text" id="num1" placeholder="0" class="inpp" onkeydown="return false"></div>                    
+             </div>    
+           </div>
+         <div class="row">
+           <div class="col">
+               <div class="dropdown">
+                  <div class="inputclass" onclick="myFunction10()"><span id="numspsecond" >BIN</span><button  class="dropbtn inputclass" id="numsecond"><i class="fas fa-caret-down"></i></button></div>
+               </div>                                   
+           </div>
+           <div class="col" >
+              <div class="row mr-2" ><input type="text" id="num2" placeholder="0" class="inpp" onkeydown="return false"></div>                 
+           </div>             
+         </div>              
+         <hr>              
+       <div id="numpalette" class="">
+         <div class="row mb-2 mx-2">                     
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold acn">AC</button></div>  
+            <div class="col-3"><button type="button" class="btn a1 crossn"><i class="fas fa-backspace"></i></button></div> 
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold fn">F</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold en">E</button></div>             
+         </div>
+       <div class="row mb-2 mx-2">                            
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 7n">7</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 8n">8</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 9n">9</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold dn">D</button></div>           
+       </div>
+       <div class="row mb-2 mx-2">   
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 4n">4</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 5n">5</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 6n">6</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold cn">C</button></div>                                            
+       </div> 
+       <div class="row mb-2 mx-2">  
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 1n">1</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 2n">2</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold 3n">3</button></div>
+          <div class="col-3"><button type="button" class="btn a1 font-weight-bold bn">B</button></div>                                      
+        </div> 
+        <div class="row mb-0 mx-2">  
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold gon">GO</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold 0n">0</button></div>
+            <div class="col-3"><button type="button" class="btn a1 decimaln" ><i class="fas fa-circle"></i></button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold an">A</button></div>                                      
+          </div> 
+       </div>
+       </div>            
+     </div>
+   </div>
+ </div>
+ <div class="col-1"></div>
+ </div>
+</div>        
+</div>
+</div>
+</div>
+<!-- Button trigger modal mortgage -->
+<button type="button" class="btn btns py-0 my-0" data-toggle="modal" data-target="#staticBackdrop16">MORTGAGE</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop16" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop16Label" aria-hidden="true">
+  <div class="modal-dialog mymodal " role="document" style="width:15rem;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdrop16Label">&nbsp&nbspMORTGAGE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>     
+      <div class="modal-body">
+          <!--personal loan-->                     
+            <div class="row " ><div class="col-12"><button type="button" class="btn  a2" id="prsloan" data-toggle="modal" data-target="#staticBackdrop17"><i class="fas fa-hand-holding-usd"></i>&nbspPERSONAL LOAN</button></div></div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop17" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop17Label" aria-hidden="true">
+              <div class="modal-dialog mymodal " role="document" style="width:24rem;">
+                <div class="modal-content ">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+                    <h5 class="modal-title" id="staticBackdrop17Label">PERSONAL LOAN</h5>              
+                  </div>
+                  <div class="modal-body">                    
+                     <div class="row mb-2">
+                       <div class="col-4"><h4 class="inputclass">Principal</h4></div>
+                       <div class="col-7 "><input type="text" id="principal" placeholder="Enter amount" class="inpp" onkeydown="return false"></div>
+                      </div>                                                          
+                     <div class="row">
+                       <div class="col-4"><h4 class="inputclass">Interest</h4></div>
+                     <div class="col-7 "><input type="text" id="interest" placeholder="Enter annual rate" class="inpp" onkeydown="return false"></div>
+                    </div>                    
+                      <hr>
+                    <div class="row mb-2">
+                      <div class="col-6"><h4 class="inputclass">Loan tenure</h4></div>
+                      <div class="col-5 mb-1"><input type="text" id="duration" placeholder="Enter months" class="inpp" onkeydown="return false"></div>
+                    </div>                    
+                    <div class="row mb-2">
+                      <div class="col-5"><h4 class="inputclass">First repayment</h4></div>
+                      <div class="col-6  "><input type="date" id="starttime" placeholder="dd/mm/yyyy" class="inpp" onkeydown="return false"></div>
+                    </div> 
+                    <div ><button type="button" class="btn a2 " id="gopl" >GO</button></div>       
+                      <hr>          
+                  <div id="numpaletteprsloan" class="collapse">
+                    <div class="row mb-2 mx-2">                        
+                        <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="7pl">7</button></div>
+                        <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="8pl">8</button></div>
+                        <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="9pl">9</button></div>
+                        <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="acpl">AC</button></div>
+                    </div>
+                  <div class="row mb-2 mx-2">                            
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="4pl">4</button></div>
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="5pl">5</button></div>
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="6pl">6</button></div>
+                      <div class="col-3"><button type="button" class="btn a1 " id="crosspl"><i class="fas fa-backspace"></i></button></div>
+                  </div>
+                  <div class="row mb-2 mx-2">                                
+                          <div class="col-3"><button type="button" class="btn a1 font-weight-bold"  id="1pl">1</button></div>
+                          <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="2pl">2</button></div>
+                          <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="3pl">3</button></div>
+                          <div class="col-3"></div>  
+                  </div> 
+                  <div class="row mb-0 mx-2">                                        
+                      <div class="col-3"></div> 
+                      <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="0pl" >0</button></div>    
+                      <div class="col-3"><button type="button" class="btn a1 " id="decimalpl"><i class="fas fa-circle"></i></button></div> 
+                      <div class="col-3"></div>    
+                  </div>                   
+                  </div>
+                  <div class="card collapse" style="width: 18rem;" id="prsloancard">
+                    <div class="card-body">
+                      <div align="center" ><h3 class="textstyle" style="color: #3d403d;"> EMI</h3></div>                        
+                      <div align="center" ><h3 class="textstyle"><span class="emitime">0</span>&nbspmonths</h3></div>
+                      <div align="center" ><h3 class="emiamount textstyle">0</h3></div>
+                      <hr>
+                      <div align="center" class="textstyle pb-2" style="color: #3d403d;"><h2>Total payment</h2></div>
+                      <div align="center" ><h3 class="totalamt textstyle">0</h3></div>                        
+                      <div class="progress">
+                        <div class="progress-bar  progress-bar-striped pro1" style="background-color:#00FFFF;" role="progressbar"   aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar  progress-bar-striped pro2" style="background-color:#B0BF1A;" role="progressbar"  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>                    
+                      </div>
+                      <div class="row pt-2">
+                        <div class="col textstyle " align="left" style="color:#00FFFF;">Total principal</div>
+                        <div class="col textstyle " align="right" style="color:#B0BF1A;">Total interest</div>
+                      </div>
+                      <div class="row">
+                        <div class="col tp textstyle" align="left" style="color:#00FFFF;"></div>
+                        <div class="col ti textstyle" align="right" style="color:#B0BF1A;"></div>
+                      </div>
+                    </div>                   
+                  </div>     
+                </div>                 
+              </div>
+            </div>                         
+     </div> 
+    
+     <!--split bill--> 
+<div class="row " ><div class="col-12"><button type="button" class="btn a2 " id="split" data-toggle="modal" data-target="#staticBackdrop18"><i class="fas fa-receipt"></i>&nbspSPLIT BILL</button></div></div>   
+                  <!-- Modal -->
+ <div class="modal fade" id="staticBackdrop18" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop18Label" aria-hidden="true">
+     <div class="modal-dialog mymodal " role="document" style="width:22rem;">
+       <div class="modal-content ">
+         <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+           <h5 class="modal-title" id="staticBackdrop18Label">&nbsp&nbspSPLIT BILL</h5>              
+         </div>
+         <div class="modal-body ">
+            <div class="row  mb-2">
+              <div class="col-6"><h4 class="inputclass">Amount</h4></div>
+              <div class="col-6  " align="right" ><input type="text" id="splitamt" placeholder="0" class="inpp" onkeydown="return false" style="width:130px;"></div>
+            </div>
+            <div class="row mb-2">
+             <div class="col-6"><h4 class="inputclass">People</h4></div>
+             <div class="col-6 " align="right" ><input type="text" id="people" placeholder="0" class="inpp" onkeydown="return false" style="width:130px;"></div>
+           </div>
+           <div class="row mb-2 ">
+             <div class="col-6"><h4 class="inputclass">Split amount</h4></div>
+             <div class="col-6"><div class=" inpp" style="width:130px;" id="splitans">0</div></div>
+           </div>                                      
+             <hr>          
+         <div id="numpalette" class="">
+           <div class="row mb-2 mx-2">                                        
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="7sp">7</button></div>               
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="8sp">8</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="9sp">9</button></div>
+            <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="acsp">AC</button></div>
+           </div>
+         <div class="row mb-2 mx-2">                            
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="4sp">4</button></div>
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="5sp">5</button></div>
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="6sp">6</button></div>
+             <div class="col-3"><button type="button" class="btn a1 " id="crosssp"><i class="fas fa-backspace"></i></button></div>
+        </div>
+        <div class="row mb-2 mx-2">                                
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold"  id="1sp">1</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="2sp">2</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="3sp">3</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="gosp" >GO</button></div>    
+         </div> 
+         <div class="row mb-0 mx-2">                                        
+             <div class="col-3"></div> 
+             <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="0sp" >0</button></div>    
+             <div class="col-3"><button type="button" class="btn a1 " id="decimalsp"><i class="fas fa-circle"></i></button></div> 
+             <div class="col-3"></div>    
+         </div>                                       
+        </div>            
+      </div>
+     </div>
+   </div>                         
+</div>   
+<!--gst-->       
+<div class="row "><div class="col-12 "><button type="button" class="btn  a2" id="gst" data-toggle="modal" data-target="#staticBackdrop19"><i class="fas fa-calculator"></i>&nbspGST</button></div></div>          
+ <!-- Modal -->
+<div class="modal fade" id="staticBackdrop19" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop19Label" aria-hidden="true">
+    <div class="modal-dialog mymodal " role="document" style="width:24rem;">
+      <div class="modal-content px-3">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-arrow-left"></i></button>
+          <h5 class="modal-title" id="staticBackdrop19Label">GST</h5>              
+        </div>
+        <div class="modal-body">
+           <div class="row mb-2">
+             <div class="col"><h4 class="inputclass">Original Price</h4></div>
+             <div class="col " align="right" ><input type="text" id="origpr" placeholder="0" class="inpp" onkeydown="return false"></div>
+           </div>           
+            <div class="col-12 mt-2"><h4 class="inputclass">GST</h4></div>
+            <div class="col-12 btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" style="background-color: #3d403d; color: #D7DBDD;" class="btn  3g">3%</button>
+                <button type="button" style="background-color: #3d403d; color: #D7DBDD;" class="btn  5g">5%</button>
+                <button type="button" style="background-color: #3d403d; color: #D7DBDD;" class="btn  12g">12%</button>
+                <button type="button" style="background-color: #3d403d; color: #D7DBDD;" class="btn  18g">18%</button>
+                <button type="button" style="background-color: #3d403d; color: #D7DBDD;" class="btn  28g">28%</button>
+              </div>          
+          <div class="row mt-2 mb-2">
+            <div class="col"><h4 class="inputclass">Final price</h4></div>
+            <div class="col"><div class="inpp"  id="gstans"></div></div> 
+          </div>
+          <div align="center" class="textstyle">CGST/SGST:<span class="cgst">0</span></div>                          
+            <hr>          
+          <div id="numpalette" class="">
+            <div class="row mb-2 mx-2">                        
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="7gst">7</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="8gst">8</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="9gst">9</button></div>
+                <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="acgst">AC</button></div>
+            </div>
+          <div class="row mb-2 mx-2">                            
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="4gst">4</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="5gst">5</button></div>
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="6gst">6</button></div>
+              <div class="col-3"><button type="button" class="btn a1 " id="crossgst"><i class="fas fa-backspace"></i></button></div>
+          </div>
+          <div class="row mb-2 mx-2">                                
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold"  id="1gst">1</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="2gst">2</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="3gst">3</button></div>
+                  <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="gogst" >GO</button></div>    
+          </div> 
+          <div class="row mb-0 mx-2">                                        
+              <div class="col-3"></div> 
+              <div class="col-3"><button type="button" class="btn a1 font-weight-bold" id="0gst" >0</button></div>    
+              <div class="col-3"><button type="button" class="btn a1 " id="decimalgst"><i class="fas fa-circle"></i></button></div> 
+              <div class="col-3"></div>    
+          </div>                                       
+          </div>            
+         </div>
+       </div>
+     </div>                         
+   </div>         
+   </div>
+  </div>      
+  </div>
+  </div>
+</div><!--CARD ENDS HERE-->
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction1() {
+      document.getElementById("myDropdown1").classList.toggle("show");
+    }    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction2() {
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    function myFunction3() {
+      document.getElementById("myDropdown3").classList.toggle("show");
+    }
+    function myFunction4() {
+      document.getElementById("myDropdown4").classList.toggle("show");
+    }
+    function myFunction5() {
+      document.getElementById("myDropdown5").classList.toggle("show");
+    }
+    function myFunction6() {
+      document.getElementById("myDropdown6").classList.toggle("show");
+    }
+    function myFunction7() {
+      document.getElementById("myDropdown7").classList.toggle("show");
+    }
+    function myFunction8() {
+      document.getElementById("myDropdown8").classList.toggle("show");
+    }
+    function myFunction9() {
+      document.getElementById("myDropdown9").classList.toggle("show");
+    }
+    function myFunction10() {
+      document.getElementById("myDropdown10").classList.toggle("show");
+    }    
+    </script>    
+<script src="index.js" async defer></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
